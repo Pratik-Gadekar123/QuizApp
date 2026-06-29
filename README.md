@@ -256,11 +256,7 @@ The `proxy` setting in `package.json` forwards `/api/*` requests from React to t
 * Database integration (MongoDB/Firebase/Supabase)
 * Analytics dashboard
 
----
 
-# License
-
-This project is intended for educational and learning purposes.
 
 <img width="1908" height="900" alt="Screenshot 2026-06-29 151734" src="https://github.com/user-attachments/assets/5ca80a17-72cd-44af-ba2f-fd79369b55d5" />
 <img width="1907" height="905" alt="Screenshot 2026-06-29 151632" src="https://github.com/user-attachments/assets/b31c275b-18f3-48d3-aacc-a2f6d9c3bff3" />
