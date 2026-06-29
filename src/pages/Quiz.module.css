@@ -1,0 +1,194 @@
+.page { min-height: 100vh; background: var(--bg); }
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.backBtn2 {
+  background: none;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all 0.12s;
+}
+
+.backBtn2:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-bg);
+}
+
+.navLogo {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.content {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 5rem;
+}
+
+.quizHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.quizTopic {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.wikiPill {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 3px 10px;
+  background: var(--accent-bg);
+  color: var(--accent);
+  border-radius: 20px;
+}
+
+.progress { min-width: 140px; text-align: right; }
+
+.progressText {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.progressBar {
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: width 0.35s ease;
+}
+
+.questions { display: flex; flex-direction: column; gap: 14px; }
+
+.submitRow {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.submitBtn {
+  height: 50px;
+  padding: 0 32px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 15px;
+  font-weight: 600;
+  transition: opacity 0.15s, transform 0.1s;
+  min-width: 280px;
+}
+
+.submitBtn:hover:not(:disabled) { opacity: 0.9; }
+.submitBtn:active:not(:disabled) { transform: scale(0.98); }
+.submitBtn:disabled {
+  background: var(--border-strong);
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+
+/* Loading */
+.loadingCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  gap: 16px;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.loadingMsg {
+  font-size: 15px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.loadingTopic {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* Error */
+.errorCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  gap: 12px;
+  text-align: center;
+  padding: 2rem;
+}
+
+.errorIcon { font-size: 36px; }
+.errorTitle { font-size: 20px; font-weight: 700; color: var(--text-primary); }
+.errorMsg { font-size: 14px; color: var(--text-secondary); max-width: 400px; }
+.errorActions { display: flex; gap: 10px; margin-top: 8px; }
+
+.retryBtn {
+  height: 40px;
+  padding: 0 20px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.backBtn {
+  height: 40px;
+  padding: 0 20px;
+  background: var(--surface);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 500;
+}

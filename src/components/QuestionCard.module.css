@@ -1,0 +1,133 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.15s;
+}
+
+.card:hover { border-color: var(--border-strong); }
+
+.qMeta { margin-bottom: 8px; }
+
+.qNum {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.qText {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.55;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  transition: all 0.12s;
+  cursor: pointer;
+  width: 100%;
+}
+
+.option:hover:not(:disabled) {
+  border-color: var(--accent-border);
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+
+.option:disabled { cursor: default; }
+
+.option.selected {
+  border-color: var(--accent);
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+
+.option.correct {
+  border-color: var(--success-border) !important;
+  background: var(--success-bg) !important;
+  color: var(--success) !important;
+}
+
+.option.wrong {
+  border-color: var(--danger-border) !important;
+  background: var(--danger-bg) !important;
+  color: var(--danger) !important;
+}
+
+.optLetter {
+  font-size: 12px;
+  font-weight: 700;
+  min-width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--text-secondary);
+  transition: all 0.12s;
+}
+
+.option.selected .optLetter {
+  background: var(--accent);
+  color: #fff;
+}
+
+.option.correct .optLetter {
+  background: var(--success) !important;
+  color: #fff !important;
+}
+
+.option.wrong .optLetter {
+  background: var(--danger) !important;
+  color: #fff !important;
+}
+
+.optText { flex: 1; line-height: 1.45; }
+
+.optIcon {
+  font-size: 15px;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.explanation {
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: #fafaf8;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.explIcon { font-size: 14px; margin-top: 1px; flex-shrink: 0; }

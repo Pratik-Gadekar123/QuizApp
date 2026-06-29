@@ -1,0 +1,126 @@
+.panel { display: flex; flex-direction: column; gap: 2rem; }
+
+.scoreCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.gradeA { border-top: 4px solid #1a7a4a; }
+.gradeB { border-top: 4px solid #4f63d2; }
+.gradeC { border-top: 4px solid #92620a; }
+.gradeD { border-top: 4px solid #c0392b; }
+
+.scoreEmoji { font-size: 40px; margin-bottom: 12px; }
+
+.scoreBig {
+  font-size: 60px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--text-primary);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.scoreOf {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.scoreLabel {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.scoreTopic {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.scoreBar {
+  height: 8px;
+  background: var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0 auto 8px;
+  max-width: 320px;
+}
+
+.scoreFill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 4px;
+  transition: width 0.8s ease;
+}
+
+.gradeA .scoreFill { background: #1a7a4a; }
+.gradeB .scoreFill { background: #4f63d2; }
+.gradeC .scoreFill { background: #92620a; }
+.gradeD .scoreFill { background: #c0392b; }
+
+.scorePct {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.retryBtn {
+  height: 44px;
+  padding: 0 24px;
+  background: var(--surface);
+  color: var(--text-primary);
+  border: 1.5px solid var(--border-strong);
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.12s;
+}
+
+.retryBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-bg);
+}
+
+.newBtn {
+  height: 44px;
+  padding: 0 24px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 600;
+  transition: opacity 0.12s;
+}
+
+.newBtn:hover { opacity: 0.9; }
+
+.reviewSection { margin-top: 0.5rem; }
+
+.reviewTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.reviewList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
