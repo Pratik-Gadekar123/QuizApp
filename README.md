@@ -257,12 +257,20 @@ The `proxy` setting in `package.json` forwards `/api/*` requests from React to t
 * Analytics dashboard
 
 
-
+HomePage:
 <img width="1908" height="900" alt="Screenshot 2026-06-29 151734" src="https://github.com/user-attachments/assets/5ca80a17-72cd-44af-ba2f-fd79369b55d5" />
+
+ 5 MCQ'S
 <img width="1907" height="905" alt="Screenshot 2026-06-29 151632" src="https://github.com/user-attachments/assets/b31c275b-18f3-48d3-aacc-a2f6d9c3bff3" />
 
+Score with answers
+
 <img width="1907" height="902" alt="Screenshot 2026-06-29 151651" src="https://github.com/user-attachments/assets/2547a5b6-b8a4-4895-8ab4-368c770eac66" />
+
+Feedback foe each correct and wrong answer
 <img width="1912" height="907" alt="Screenshot 2026-06-29 151714" src="https://github.com/user-attachments/assets/287b8566-c049-40f2-9d0a-111edf96d61e" />
 
+
+Past quizzes history
 <img width="1911" height="887" alt="Screenshot 2026-06-29 151746" src="https://github.com/user-attachments/assets/1bf44bbb-8b14-4f87-9e42-2d7cc18cb15e" />
 
