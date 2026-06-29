@@ -242,6 +242,10 @@ Quiz history is stored in the browser using localStorage, allowing users to revi
 The `proxy` setting in `package.json` forwards `/api/*` requests from React to the Express backend during development, eliminating CORS issues.
 
 ---
+#The AI tool(s) selected for reasoning
+1)Chatgpt
+2)Google Ai Studio
+3)Claude
 
 # Future Improvements
 
